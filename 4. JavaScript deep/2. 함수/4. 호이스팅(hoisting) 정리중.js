@@ -49,21 +49,22 @@ var 로 변환되기 때문에 오류가 발생하지 않는다. Chrome 개발�
 // 2. 함수 호이스팅
 
 // [ 함수 표현식 ]
-a('짱구'); 
-var a = function(name) {
-    console.log("I love " + name);
+a('짱구');
+var a = function (name) {
+  console.log("I love " + name);
 }
 
- a('철수')
- 
- //================================================//
- 
- // [ 함수 선언식 ]
- b('신짱구');
-  function b (name) {
-     console.log("I love " + name);
-  }
-  b('김철수')
+a('철수')
+
+//================================================//
+
+// [ 함수 선언식 ]
+b('신짱구');
+
+function b(name) {
+  console.log("I love " + name);
+}
+b('김철수')
 /*
   - > 함수 표현식에서는 선언한 것(var a;)이 먼저 최상단('var a;')으로 끌어올려지고 
       할당 내용은 그대로이기 때문에(선언한 변수 a가 함수라는 값으로 정의되지 않은 상태, 
@@ -79,14 +80,6 @@ var a = function(name) {
       표현식'만을 사용할 것을 권하고 있다. 
 
 */
-
-
-
-
-
-
-
-
 
 /*
 
@@ -156,16 +149,16 @@ function myFunction() {
 */
 
 function myFunction() {
-    console.log('hello world!');
-  }
-  
-  myFunction();
+  console.log('hello world!');
+}
 
- 
+myFunction();
+
+
 
 function fn() {
-    console.log(a);
-    let a = 2;
+  console.log(a);
+  let a = 2;
 }
 fn();
 
